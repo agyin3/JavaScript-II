@@ -89,4 +89,9 @@ runners.forEach(runner => emailList.push(`First Name: ${runner.first_name}, Last
 console.log(emailList);
 
 // Problem 3
-
+// The organizers would like a count of each of the shirt sizes 
+const counts = Object.create(null);
+runners.forEach(runner => {
+    counts[runner.shirt_size] = counts[runner.shirt_size] ? counts[runner.shirt_size] + 1 : 1;
+});
+console.log(counts);
