@@ -83,6 +83,10 @@ let sortedCompanies = runners.map(runner => runner.company_name).sort();
 console.log(sortedCompanies);
 
 // Problem 2
-
+// The organizers need your help to compile an email list the contains a runners first and last name plus their email
+let emailList = [];
+runners.forEach(runner => emailList.push(`First Name: ${runner.first_name}, Last Name: ${runner.last_name}, Email: ${runner.email}`));
+console.log(emailList);
 
 // Problem 3
+
