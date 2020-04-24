@@ -95,3 +95,4 @@ runners.forEach(runner => {
     counts[runner.shirt_size] = counts[runner.shirt_size] ? counts[runner.shirt_size] + 1 : 1;
 });
 console.log(counts);
+
